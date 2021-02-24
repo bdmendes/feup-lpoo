@@ -11,17 +11,21 @@ import java.io.IOException;
 
 public class Game {
     private final Screen screen;
-    private int x = 10;
-    private int y = 10;
-    private int columns = 40;
-    private int rows = 20;
+    private final Hero hero;
+    private final int columns = 40;
+    private final int rows = 20;
 
     Game() throws IOException {
+        this.hero = new Hero(10,10);
+        /* Initialize view */
         TerminalSize terminalSize = new TerminalSize(this.columns, this.rows);
         DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory()
                 .setInitialTerminalSize(terminalSize);
         Terminal terminal = terminalFactory.createTerminal();
         this.screen = new TerminalScreen(terminal);
+        this.screen.setCursorPosition(null);   // we don't need a cursor
+        this.screen.startScreen();             // screens must be started
+        this.screen.doResizeIfNecessary();     // resize screen if necessary
     }
 
     public void run() throws IOException {
@@ -34,12 +38,8 @@ public class Game {
     }
 
     private void draw() throws IOException {
-        this.screen.setCursorPosition(null);   // we don't need a cursor
-        this.screen.startScreen();             // screens must be started
-        this.screen.doResizeIfNecessary();     // resize screen if necessary
-
         this.screen.clear();
-        screen.setCharacter(x, y, TextCharacter.fromCharacter('X')[0]);
+        this.hero.draw(this.screen);
         this.screen.refresh();
     }
 
@@ -47,16 +47,16 @@ public class Game {
         System.out.println(key);
         switch (key.getKeyType()){
             case ArrowUp:
-                if (y > 0) y--;
+                this.moveHero(this.hero.moveUp());
                 break;
             case ArrowDown:
-                if (y < rows - 1) y++;
+                this.moveHero(this.hero.moveDown());
                 break;
             case ArrowLeft:
-                if (x > 0) x--;
+                this.moveHero(this.hero.moveLeft());
                 break;
             case ArrowRight:
-                if (x < columns - 1) x++;
+                this.moveHero(this.hero.moveRight());
                 break;
             case Character:
                 char c = key.getCharacter();
@@ -67,4 +67,10 @@ public class Game {
         }
     }
 
+    private void moveHero(Position position){
+        if (position.getX() >= 0 && position.getX() < columns
+        && position.getY() >= 0 && position.getY() < rows){
+            this.hero.setPosition(position);
+        }
+    }
 }
