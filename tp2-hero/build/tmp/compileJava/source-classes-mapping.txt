@@ -2,12 +2,14 @@ Application.java
  Application
 Position.java
  Position
-Hero.java
- Hero
 Game.java
  Game
+Hero.java
+ Hero
 Arena.java
  Arena
  Arena$1
+Element.java
+ Element
 Wall.java
  Wall
