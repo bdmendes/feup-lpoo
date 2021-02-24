@@ -6,4 +6,6 @@ Application.java
  Application
 Game.java
  Game
- Game$1
+Arena.java
+ Arena
+ Arena$1
