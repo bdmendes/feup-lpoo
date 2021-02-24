@@ -6,6 +6,10 @@ import com.googlecode.lanterna.graphics.TextGraphics;
 import java.util.List;
 
 public class Wall {
+    public Position getPosition() {
+        return position;
+    }
+
     private final Position position;
 
     public Wall(int x, int y){

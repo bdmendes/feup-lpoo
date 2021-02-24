@@ -11,7 +11,7 @@ public class Arena {
     int width;
     int height;
     private final Hero hero;
-    private List<Wall> walls;
+    private final List<Wall> walls;
 
     Arena(int width, int height){
         this.height = height;
@@ -60,7 +60,14 @@ public class Arena {
     }
 
     private boolean canHeroMove(Position position){
-        return position.getX() >= 0 && position.getX() < width
+        boolean hitWall = false;
+        for (Wall wall : walls){
+            if (position.equals(wall.getPosition())){
+                hitWall = true;
+                break;
+            }
+        }
+        return !hitWall && position.getX() >= 0 && position.getX() < width
                 && position.getY() >= 0 && position.getY() < height;
     }
 
@@ -76,5 +83,4 @@ public class Arena {
         }
         return walls;
     }
-
 }
