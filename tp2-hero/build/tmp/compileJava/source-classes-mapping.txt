@@ -9,3 +9,5 @@ Game.java
 Arena.java
  Arena
  Arena$1
+Wall.java
+ Wall
