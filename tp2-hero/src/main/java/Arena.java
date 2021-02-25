@@ -3,10 +3,7 @@ import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.input.KeyStroke;
-import element.Coin;
-import element.Hero;
-import element.Position;
-import element.Wall;
+import element.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +15,7 @@ public class Arena {
     private final Hero hero;
     private final List<Wall> walls;
     private final List<Coin> coins;
+    private final List<Monster> monsters;
 
     Arena(int width, int height){
         this.height = height;
@@ -25,6 +23,7 @@ public class Arena {
         this.hero = new Hero(10,10);
         this.walls = this.createWalls();
         this.coins = this.createCoins();
+        this.monsters = this.createMonsters();
     }
 
     public Hero getHero() {
@@ -40,6 +39,9 @@ public class Arena {
         }
         for (final Coin coin : coins){
             coin.draw(graphics);
+        }
+        for (final Monster monster : monsters){
+            monster.draw(graphics);
         }
     }
 
@@ -61,10 +63,11 @@ public class Arena {
             default:
                 break;
         }
+        this.moveMonsters();
     }
 
     private void moveHero(Position position){
-        if (this.canHeroMove(position)){
+        if (this.canElementMove(position)){
             hero.setPosition(position);
             for (int i = 0; i < this.coins.size(); i++){
                 if (this.coins.get(i).getPosition().equals(position)){
@@ -75,7 +78,39 @@ public class Arena {
         }
     }
 
-    private boolean canHeroMove(Position position){
+    private List<Monster> createMonsters(){
+        Random random = new Random();
+        ArrayList<Monster> monsters = new ArrayList<>();
+        for (int i = 0; i < 5; i++){
+            int x,y;
+            for(;;){
+                x = random.nextInt(width - 2) + 1;
+                y = random.nextInt(height - 2) + 1;
+                boolean inCoin = false;
+                for (Coin c : coins){
+                    if (c.getPosition().equals(new Position(x,y))) {
+                        inCoin = true;
+                        break;
+                    }
+                }
+                if (!inCoin && !this.hero.getPosition().equals(new Position(x,y))) break;
+            }
+            monsters.add(new Monster(x,y));
+        }
+        return monsters;
+    }
+
+    private void moveMonsters(){
+        for (Monster monster : this.monsters){
+            Position pos = monster.move();
+            if (canElementMove(pos)){
+                System.out.println("hey");
+                monster.setPosition(pos);
+            }
+        }
+    }
+
+    private boolean canElementMove(Position position){
         boolean hitWall = false;
         for (Wall wall : walls){
             if (position.equals(wall.getPosition())){
