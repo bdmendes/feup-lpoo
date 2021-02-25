@@ -1,15 +1,17 @@
+element/Element.java
+ element.Element
+element/Coin.java
+ element.Coin
+element/Position.java
+ element.Position
+element/Hero.java
+ element.Hero
+element/Wall.java
+ element.Wall
 Application.java
  Application
-Position.java
- Position
 Game.java
  Game
-Hero.java
- Hero
 Arena.java
  Arena
  Arena$1
-Element.java
- Element
-Wall.java
- Wall
