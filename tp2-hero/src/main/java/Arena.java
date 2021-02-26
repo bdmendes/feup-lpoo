@@ -15,6 +15,11 @@ public class Arena {
     private final Hero hero;
     private final List<Wall> walls;
     private final List<Coin> coins;
+
+    public List<Monster> getMonsters() {
+        return monsters;
+    }
+
     private final List<Monster> monsters;
 
     Arena(int width, int height){
@@ -22,8 +27,8 @@ public class Arena {
         this.width = width;
         this.hero = new Hero(10,10);
         this.walls = this.createWalls();
-        this.coins = this.createCoins();
-        this.monsters = this.createMonsters();
+        this.coins = this.createCoins(10);
+        this.monsters = this.createMonsters(10);
     }
 
     public Hero getHero() {
@@ -66,22 +71,37 @@ public class Arena {
         this.moveMonsters();
     }
 
+    public boolean isAboveMonster(Position position){
+        for (Monster monster : this.monsters) {
+            if (monster.getPosition().equals(position)) {
+                return false;
+            }
+        }
+        return false;
+    }
+
+    public boolean isAboveCoin(Position position){
+        for (Coin coin : this.coins) {
+            if (coin.getPosition().equals(position)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private void moveHero(Position position){
         if (this.canElementMove(position)){
             hero.setPosition(position);
-            for (int i = 0; i < this.coins.size(); i++){
-                if (this.coins.get(i).getPosition().equals(position)){
-                    this.coins.remove(i);
-                    i--;
-                }
+            if (isAboveCoin(position)){
+                coins.removeIf(c -> c.getPosition().equals(position));
             }
         }
     }
 
-    private List<Monster> createMonsters(){
+    private List<Monster> createMonsters(int no_monsters){
         Random random = new Random();
         ArrayList<Monster> monsters = new ArrayList<>();
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < no_monsters; i++){
             int x,y;
             for(;;){
                 x = random.nextInt(width - 2) + 1;
@@ -135,10 +155,10 @@ public class Arena {
         return walls;
     }
 
-    private List<Coin> createCoins() {
+    private List<Coin> createCoins(int no_coins) {
         Random random = new Random();
         ArrayList<Coin> coins = new ArrayList<>();
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < no_coins; i++){
             int x = 0, y = 0;
             while (x == 0 || y == 0 || this.hero.getPosition().equals(new Position(x,y))){
                 x = random.nextInt(width - 2) + 1;

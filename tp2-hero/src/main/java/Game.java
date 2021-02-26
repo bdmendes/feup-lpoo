@@ -5,6 +5,7 @@ import com.googlecode.lanterna.terminal.Terminal;
 import com.googlecode.lanterna.screen.Screen;
 import com.googlecode.lanterna.screen.TerminalScreen;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
+import element.Monster;
 
 import java.io.IOException;
 
@@ -31,15 +32,24 @@ public class Game {
 
     public void run() throws IOException {
         for(;;){
-            this.draw();
-            KeyStroke key = this.screen.readInput();
-            if (key.getKeyType() == KeyType.Character && key.getCharacter() == 'q'){
-                screen.close(); //sends eof signal
-            }
-            if (key.getKeyType() == KeyType.EOF){ // window closed
+            if (this.isGameOver()){
+                screen.close();
                 break;
             }
+
+            this.draw();
+
+            KeyStroke key = this.screen.readInput();
             this.arena.processKey(key);
+            if (key.getKeyType() == KeyType.Character && key.getCharacter() == 'q'){
+                screen.close();
+                break;
+            }
+
+            if (this.isGameOver()){
+                screen.close();
+                break;
+            }
         }
     }
 
@@ -47,5 +57,13 @@ public class Game {
         this.screen.clear();
         this.arena.draw(screen.newTextGraphics());
         this.screen.refresh();
+    }
+
+    private boolean isGameOver() {
+        // Check if monster is above hero
+        for (Monster m : this.arena.getMonsters()) {
+            if (m.getPosition().equals(this.arena.getHero().getPosition())) return true;
+        }
+        return false;
     }
 }
