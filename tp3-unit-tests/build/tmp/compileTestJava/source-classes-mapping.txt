@@ -1,15 +1,12 @@
-com/aor/numbers/ListDeduplicatorTest.java
- com.aor.numbers.ListDeduplicatorTest
- com.aor.numbers.ListDeduplicatorTest$DeduplicatorEdgeCase
- com.aor.numbers.ListDeduplicatorTest$DeduplicatorEdgeCase$StubSorter
- com.aor.numbers.ListDeduplicatorTest$DeduplicatorOriginal
- com.aor.numbers.ListDeduplicatorTest$DeduplicatorOriginal$StubSorter
 com/aor/numbers/ListAggregatorTest.java
  com.aor.numbers.ListAggregatorTest
  com.aor.numbers.ListAggregatorTest$ListAggregatorTestCornerCase1
  com.aor.numbers.ListAggregatorTest$ListAggregatorTestCornerCase2
- com.aor.numbers.ListAggregatorTest$ListAggregatorTestCornerCase2$StubListDeduplicator
  com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic
  com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic$StubListDeduplicator
 com/aor/numbers/ListSorterTest.java
  com.aor.numbers.ListSorterTest
+com/aor/numbers/ListDeduplicatorTest.java
+ com.aor.numbers.ListDeduplicatorTest
+ com.aor.numbers.ListDeduplicatorTest$DeduplicatorEdgeCase
+ com.aor.numbers.ListDeduplicatorTest$DeduplicatorOriginal

@@ -21,6 +21,7 @@ public class ListDeduplicator implements IListDeduplicator{
      * change.
      */
     public List<Integer> deduplicate(IListSorter sorter) {
+        ListSorter listSorter = new ListSorter(list);
         List<Integer> sorted = sorter.sort();
         List<Integer> unique = new ArrayList<>();
 

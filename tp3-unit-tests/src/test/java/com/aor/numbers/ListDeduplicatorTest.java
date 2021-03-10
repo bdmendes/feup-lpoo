@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,13 +17,6 @@ public class ListDeduplicatorTest {
 
     @Nested
     class DeduplicatorOriginal {
-
-        class StubSorter implements IListSorter{
-            @Override
-            public List<Integer> sort() {
-                return Arrays.asList(1,2,2,4,5);
-            }
-        }
 
         @Test
         public void deduplicate() {
@@ -37,28 +32,30 @@ public class ListDeduplicatorTest {
             expected.add(2);
             expected.add(4);
             expected.add(5);
+
+            IListSorter sorter = Mockito.mock(IListSorter.class);
+            Mockito.when(sorter.sort()).thenReturn(Arrays.asList(1,2,2,4,5));
+
             ListDeduplicator deduplicator = new ListDeduplicator(list);
-            List<Integer> distinct = deduplicator.deduplicate(new StubSorter());
+            List<Integer> distinct = deduplicator.deduplicate(sorter);
+
             Assertions.assertEquals(expected, distinct);
         }
     }
 
     @Nested
     class DeduplicatorEdgeCase {
-        @Nested
-        class StubSorter implements IListSorter{
-            @Override
-            public List<Integer> sort() {
-                return Arrays.asList(1,2,2,4);
-            }
-        }
-
         @Test
         public void deduplicate() {
             list = Arrays.asList(1,2,4,2);
             expected = Arrays.asList(1,2,4);
+
+            IListSorter sorter = Mockito.mock(IListSorter.class);
+            Mockito.when(sorter.sort()).thenReturn(Arrays.asList(1,2,2,4));
+
             ListDeduplicator deduplicator = new ListDeduplicator(list);
-            List<Integer> distinct = deduplicator.deduplicate(new StubSorter());
+            List<Integer> distinct = deduplicator.deduplicate(sorter);
+
             Assertions.assertEquals(expected, distinct);
         }
     }

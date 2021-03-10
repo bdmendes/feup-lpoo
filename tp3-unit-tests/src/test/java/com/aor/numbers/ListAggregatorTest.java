@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,21 +78,16 @@ public class ListAggregatorTest {
     @Nested
     class ListAggregatorTestCornerCase2 {
 
-        @Nested
-        class StubListDeduplicator implements IListDeduplicator {
-            @Override
-            public List<Integer> deduplicate(IListSorter sorter) {
-                return Arrays.asList(1,2,4);
-            }
-        }
-
         @Test
         public void distinct_bug_8726(){
             List<Integer> list = Arrays.asList(1,2,4,2);
             ListAggregator aggregator = new ListAggregator(list);
-            int distinct = aggregator.distinct(new StubListDeduplicator());
+
+            IListDeduplicator deduplicator = Mockito.mock(IListDeduplicator.class);
+            Mockito.when(deduplicator.deduplicate(Mockito.any())).thenReturn(Arrays.asList(1,2,4));
+
+            int distinct = aggregator.distinct(deduplicator);
             Assertions.assertEquals(3,distinct);
         }
     }
-
 }
