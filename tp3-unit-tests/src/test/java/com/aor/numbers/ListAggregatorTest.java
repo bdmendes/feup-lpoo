@@ -49,7 +49,7 @@ public class ListAggregatorTest {
         @Nested
         class StubListDeduplicator implements IListDeduplicator {
             @Override
-            public List<Integer> deduplicate() {
+            public List<Integer> deduplicate(IListSorter sorter) {
                 return Arrays.asList(1,2,4,5);
             }
         }
@@ -80,7 +80,7 @@ public class ListAggregatorTest {
         @Nested
         class StubListDeduplicator implements IListDeduplicator {
             @Override
-            public List<Integer> deduplicate() {
+            public List<Integer> deduplicate(IListSorter sorter) {
                 return Arrays.asList(1,2,4);
             }
         }

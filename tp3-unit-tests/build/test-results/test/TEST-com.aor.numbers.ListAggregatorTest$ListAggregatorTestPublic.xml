@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-10T10:48:10" hostname="torre" time="0.008">
+<testsuite name="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-10T11:17:04" hostname="torre" time="0.01">
   <properties/>
   <testcase name="max()" classname="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" time="0.003"/>
   <testcase name="min()" classname="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" time="0.001"/>

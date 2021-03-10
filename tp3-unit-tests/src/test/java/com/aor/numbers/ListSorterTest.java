@@ -5,13 +5,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ListSorterTest {
 
-    private ArrayList<Integer> list, expected;
+    private List<Integer> list, expected;
 
-    @BeforeEach void setup(){
+    @Test
+    public void sort() {
         list = new ArrayList<>();
         list.add(3);
         list.add(2);
@@ -29,10 +31,15 @@ public class ListSorterTest {
         expected.add(5);
         expected.add(6);
         expected.add(7);
+        ListSorter sorter = new ListSorter(list);
+        List<Integer> sorted = sorter.sort();
+        Assertions.assertEquals(expected, sorted);
     }
 
     @Test
-    public void sort() {
+    public void sort2(){
+        list = Arrays.asList(1,2,4,2);
+        expected = Arrays.asList(1,2,2,4);
         ListSorter sorter = new ListSorter(list);
         List<Integer> sorted = sorter.sort();
         Assertions.assertEquals(expected, sorted);

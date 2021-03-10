@@ -20,9 +20,8 @@ public class ListDeduplicator implements IListDeduplicator{
      * but withou duplicates. The order of the numbers might
      * change.
      */
-    public List<Integer> deduplicate() {
-        ListSorter listSorter = new ListSorter(list);
-        List<Integer> sorted = listSorter.sort();
+    public List<Integer> deduplicate(IListSorter sorter) {
+        List<Integer> sorted = sorter.sort();
         List<Integer> unique = new ArrayList<>();
 
         Integer last = null;
