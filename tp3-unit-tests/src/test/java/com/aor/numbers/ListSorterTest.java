@@ -1,6 +1,7 @@
 package com.aor.numbers;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -8,9 +9,10 @@ import java.util.List;
 
 public class ListSorterTest {
 
-    @Test
-    public void sort() {
-        List<Integer> list = new ArrayList();
+    private ArrayList<Integer> list, expected;
+
+    @BeforeEach void setup(){
+        list = new ArrayList<>();
         list.add(3);
         list.add(2);
         list.add(6);
@@ -19,7 +21,7 @@ public class ListSorterTest {
         list.add(5);
         list.add(7);
 
-        List<Integer> expected = new ArrayList();
+        expected = new ArrayList<>();
         expected.add(1);
         expected.add(2);
         expected.add(3);
@@ -27,11 +29,12 @@ public class ListSorterTest {
         expected.add(5);
         expected.add(6);
         expected.add(7);
+    }
 
-
+    @Test
+    public void sort() {
         ListSorter sorter = new ListSorter(list);
         List<Integer> sorted = sorter.sort();
-
         Assertions.assertEquals(expected, sorted);
     }
 }
