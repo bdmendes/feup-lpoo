@@ -46,22 +46,51 @@ public class ListAggregatorTest {
             Assertions.assertEquals(1, min);
         }
 
+        @Nested
+        class StubListDeduplicator implements IListDeduplicator {
+            @Override
+            public List<Integer> deduplicate() {
+                return Arrays.asList(1,2,4,5);
+            }
+        }
+
         @Test
         public void distinct() {
             ListAggregator aggregator = new ListAggregator(list);
-            int distinct = aggregator.distinct();
+            int distinct = aggregator.distinct(new StubListDeduplicator());
             Assertions.assertEquals(4, distinct);
         }
     }
 
     @Nested
-    class ListAggregatorTestCornerCases {
+    class ListAggregatorTestCornerCase1 {
+
         @Test
         public void max_bug_7263(){
             List<Integer> list = Arrays.asList(-1,-4,-5);
             ListAggregator aggregator = new ListAggregator(list);
             int max = aggregator.max();
             Assertions.assertEquals(-1,max);
+        }
+    }
+
+    @Nested
+    class ListAggregatorTestCornerCase2 {
+
+        @Nested
+        class StubListDeduplicator implements IListDeduplicator {
+            @Override
+            public List<Integer> deduplicate() {
+                return Arrays.asList(1,2,4);
+            }
+        }
+
+        @Test
+        public void distinct_bug_8726(){
+            List<Integer> list = Arrays.asList(1,2,4,2);
+            ListAggregator aggregator = new ListAggregator(list);
+            int distinct = aggregator.distinct(new StubListDeduplicator());
+            Assertions.assertEquals(3,distinct);
         }
     }
 

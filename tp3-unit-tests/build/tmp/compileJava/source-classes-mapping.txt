@@ -1,6 +1,8 @@
 com/aor/numbers/ListSorter.java
  com.aor.numbers.ListSorter
-com/aor/numbers/ListDeduplicator.java
- com.aor.numbers.ListDeduplicator
+com/aor/numbers/IListDeduplicator.java
+ com.aor.numbers.IListDeduplicator
 com/aor/numbers/ListAggregator.java
  com.aor.numbers.ListAggregator
+com/aor/numbers/ListDeduplicator.java
+ com.aor.numbers.ListDeduplicator
