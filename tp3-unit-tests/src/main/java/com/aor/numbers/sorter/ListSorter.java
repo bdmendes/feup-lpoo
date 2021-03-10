@@ -1,4 +1,4 @@
-package com.aor.numbers;
+package com.aor.numbers.sorter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * An utility class to sort list of numbers.
  */
-public class ListSorter implements IListSorter{
+public class ListSorter implements IListSorter {
     private final List<Integer> list;
 
     public ListSorter(List<Integer> list) {

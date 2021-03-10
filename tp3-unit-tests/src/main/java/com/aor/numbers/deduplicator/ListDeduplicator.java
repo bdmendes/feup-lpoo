@@ -1,4 +1,7 @@
-package com.aor.numbers;
+package com.aor.numbers.deduplicator;
+
+import com.aor.numbers.sorter.IListSorter;
+import com.aor.numbers.sorter.ListSorter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +10,7 @@ import java.util.List;
  * An utility class that removes duplicate numbers
  * from a list.
  */
-public class ListDeduplicator implements IListDeduplicator{
+public class ListDeduplicator implements IListDeduplicator {
     private final List<Integer> list;
 
     public ListDeduplicator(List<Integer> list) {

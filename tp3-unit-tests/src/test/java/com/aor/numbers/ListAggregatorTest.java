@@ -1,5 +1,8 @@
 package com.aor.numbers;
 
+import com.aor.numbers.aggregator.ListAggregator;
+import com.aor.numbers.deduplicator.IListDeduplicator;
+import com.aor.numbers.sorter.IListSorter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;

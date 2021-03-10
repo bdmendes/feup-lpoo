@@ -1,10 +1,12 @@
-com/aor/numbers/IListDeduplicator.java
- com.aor.numbers.IListDeduplicator
-com/aor/numbers/IListSorter.java
- com.aor.numbers.IListSorter
-com/aor/numbers/ListAggregator.java
- com.aor.numbers.ListAggregator
-com/aor/numbers/ListSorter.java
- com.aor.numbers.ListSorter
-com/aor/numbers/ListDeduplicator.java
- com.aor.numbers.ListDeduplicator
+com/aor/numbers/aggregator/ListAggregator.java
+ com.aor.numbers.aggregator.ListAggregator
+com/aor/numbers/filterer/IListFilterer.java
+ com.aor.numbers.filterer.IListFilterer
+com/aor/numbers/deduplicator/IListDeduplicator.java
+ com.aor.numbers.deduplicator.IListDeduplicator
+com/aor/numbers/sorter/ListSorter.java
+ com.aor.numbers.sorter.ListSorter
+com/aor/numbers/sorter/IListSorter.java
+ com.aor.numbers.sorter.IListSorter
+com/aor/numbers/deduplicator/ListDeduplicator.java
+ com.aor.numbers.deduplicator.ListDeduplicator

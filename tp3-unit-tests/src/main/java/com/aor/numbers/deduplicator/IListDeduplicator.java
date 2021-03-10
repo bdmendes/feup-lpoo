@@ -1,4 +1,6 @@
-package com.aor.numbers;
+package com.aor.numbers.deduplicator;
+
+import com.aor.numbers.sorter.IListSorter;
 
 import java.util.List;
 

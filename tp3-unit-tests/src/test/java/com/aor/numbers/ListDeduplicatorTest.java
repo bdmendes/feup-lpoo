@@ -1,10 +1,10 @@
 package com.aor.numbers;
 
+import com.aor.numbers.deduplicator.ListDeduplicator;
+import com.aor.numbers.sorter.IListSorter;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.util.ArrayList;
