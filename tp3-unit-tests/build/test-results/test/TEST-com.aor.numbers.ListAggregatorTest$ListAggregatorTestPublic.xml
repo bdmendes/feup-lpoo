@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-10T12:02:49" hostname="torre" time="0.011">
+<testsuite name="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-10T12:29:46" hostname="torre" time="0.013">
   <properties/>
   <testcase name="max()" classname="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" time="0.005"/>
   <testcase name="min()" classname="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" time="0.001"/>
-  <testcase name="sum()" classname="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" time="0.001"/>
+  <testcase name="sum()" classname="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" time="0.002"/>
   <testcase name="distinct()" classname="com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
