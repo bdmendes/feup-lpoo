@@ -31,7 +31,7 @@ public class ListAggregator {
      * @return The maximum value in the list.
      */
     public Integer max() {
-        int max = 0;
+        int max = list.isEmpty() ? 0 : list.get(0);
 
         for (Integer number : list)
             if (number > max)
