@@ -1,16 +1,30 @@
-shapes/Square.java
- shapes.Square
-shapes/Circle.java
- shapes.Circle
+shapes/BasicShape.java
+ shapes.BasicShape
+area/HasArea.java
+ area.HasArea
+shapes/elementar/Line.java
+ shapes.elementar.Line
+shapes/elementar/Circle.java
+ shapes.elementar.Circle
+shapes/elementar/Triangle.java
+ shapes.elementar.Triangle
+shapes/elementar/Square.java
+ shapes.elementar.Square
+shapes/elementar/Rectangle.java
+ shapes.elementar.Rectangle
+city/House.java
+ city.House
 shapes/Shape.java
  shapes.Shape
-shapes/Ellipse.java
- shapes.Ellipse
-area/AreaAggregator.java
- area.AreaAggregator
+Application.java
+ Application
 area/AreaStringOutputter.java
  area.AreaStringOutputter
 area/AreaXMLOutputter.java
  area.AreaXMLOutputter
-Application.java
- Application
+shapes/elementar/Ellipse.java
+ shapes.elementar.Ellipse
+area/AreaAggregator.java
+ area.AreaAggregator
+city/City.java
+ city.City

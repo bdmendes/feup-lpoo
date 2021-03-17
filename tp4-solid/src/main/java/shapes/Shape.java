@@ -1,5 +1,7 @@
 package shapes;
+import area.HasArea;
 
-public class Shape {
-
+public interface Shape extends BasicShape, HasArea {
+    double getArea();
+    void draw();
 }
