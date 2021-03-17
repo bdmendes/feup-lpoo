@@ -1,9 +1,14 @@
 package shapes.elementar;
-import shapes.BasicShape;
+import shapes.Shape;
 
-public class Line implements BasicShape {
+public class Line implements Shape {
     double length;
     public Line(double length){
         this.length = length;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Line");
     }
 }

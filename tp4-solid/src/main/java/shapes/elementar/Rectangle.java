@@ -1,8 +1,8 @@
 package shapes.elementar;
 
-import shapes.Shape;
+import shapes.AreaShape;
 
-public class Rectangle implements Shape {
+public class Rectangle implements AreaShape {
     double width, height;
     public Rectangle(int width, int height){
         this.width = width;

@@ -1,7 +1,13 @@
 package area;
 
 public class AreaStringOutputter {
-    public String output(AreaAggregator area){
-        return String.valueOf(area.sum());
+    private final SumProvider provider;
+
+    public AreaStringOutputter(SumProvider provider) {
+        this.provider = provider;
+    }
+
+    public String output(){
+        return "Sum of areas: " + String.valueOf(provider.sum());
     }
 }

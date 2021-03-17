@@ -1,8 +1,8 @@
 package shapes.elementar;
 
-import shapes.Shape;
+import shapes.AreaShape;
 
-public class Ellipse implements Shape {
+public class Ellipse implements AreaShape {
     private double xRadius, yRadius;
     public Ellipse(int xRadius, int yRadius){
         this.xRadius = xRadius;

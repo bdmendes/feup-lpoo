@@ -1,8 +1,8 @@
 package shapes.elementar;
 
-import shapes.Shape;
+import shapes.AreaShape;
 
-public class Circle implements Shape {
+public class Circle implements AreaShape {
     private double radius;
     public Circle(int radius){
         this.radius = radius;

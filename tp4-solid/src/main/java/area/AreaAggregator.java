@@ -1,13 +1,12 @@
 package area;
-import shapes.Shape;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AreaAggregator {
+public class AreaAggregator implements SumProvider{
     private final List<HasArea> objects = new ArrayList<>();
 
-    public void addObject(HasArea object) {
+    public void addShape(HasArea object) {
         objects.add(object);
     }
 

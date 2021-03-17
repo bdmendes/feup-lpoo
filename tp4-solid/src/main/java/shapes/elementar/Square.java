@@ -1,8 +1,8 @@
 package shapes.elementar;
 
-import shapes.Shape;
+import shapes.AreaShape;
 
-public class Square implements Shape {
+public class Square implements AreaShape {
     double side;
     public Square(int side){
         this.side = side;
