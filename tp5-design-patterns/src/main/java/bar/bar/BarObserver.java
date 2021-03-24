@@ -1,4 +1,4 @@
-package bar;
+package bar.bar;
 
 public interface BarObserver {
     void happyHourStarted(Bar bar);

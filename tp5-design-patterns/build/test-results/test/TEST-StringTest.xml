@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-03-24T12:37:40" hostname="torre" time="0.045">
+<testsuite name="StringTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-03-24T15:49:17" hostname="torre" time="0.036">
   <properties/>
-  <testcase name="stringReplacer()" classname="StringTest" time="0.032"/>
-  <testcase name="transformUndo()" classname="StringTest" time="0.002"/>
+  <testcase name="stringReplacer()" classname="StringTest" time="0.027"/>
+  <testcase name="transformUndo()" classname="StringTest" time="0.001"/>
   <testcase name="stringDrink()" classname="StringTest" time="0.001"/>
   <testcase name="stringInverter()" classname="StringTest" time="0.001"/>
   <testcase name="transformerComposite()" classname="StringTest" time="0.001"/>

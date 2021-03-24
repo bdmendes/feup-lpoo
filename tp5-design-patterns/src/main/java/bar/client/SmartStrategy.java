@@ -1,10 +1,11 @@
-package bar;
+package bar.client;
 
+import bar.bar.Bar;
+import bar.bar.StringBar;
 import string.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class SmartStrategy implements OrderingStrategy{
     private final HashMap<Bar, Boolean> orderImmediatly;

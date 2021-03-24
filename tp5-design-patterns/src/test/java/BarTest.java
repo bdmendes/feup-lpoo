@@ -1,12 +1,12 @@
-import bar.Bar;
-import bar.StringBar;
+import bar.bar.Bar;
+import bar.bar.StringBar;
+import bar.client.*;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import string.*;
-import bar.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -127,6 +127,52 @@ public class BarTest {
 
         // Recipe is only ordered here
         stringBar.startHappyHour();
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
+
+    @Test
+    public void ferengiAlreadyOpened() {
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = getRecipe();
+
+        FerengiClient client = new FerengiClient();
+        stringBar.addObserver(client); // this is important!
+
+        // Recipe is ordered immediately
+        stringBar.startHappyHour();
+        client.wants(drink, recipe, stringBar);
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
+
+    @Test
+    public void ferengiStartClosed() {
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = getRecipe();
+
+        FerengiClient client = new FerengiClient();
+        stringBar.addObserver(client); // this is important!
+
+        client.wants(drink, recipe, stringBar);
+        assertEquals("AbCd-aBcD", drink.getText());
+
+        // Recipe is only ordered here
+        stringBar.startHappyHour();
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
+
+    @Test
+    public void romulan() {
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = getRecipe();
+
+        RomulanClient client = new RomulanClient();
+        stringBar.addObserver(client); // this is important!
+
+        // Recipe is ordered immediately
+        client.wants(drink, recipe, stringBar);
         assertEquals("dCbX-DcBa", drink.getText());
     }
 

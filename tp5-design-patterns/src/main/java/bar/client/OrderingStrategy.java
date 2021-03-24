@@ -1,5 +1,6 @@
-package bar;
+package bar.client;
 
+import bar.bar.StringBar;
 import string.*;
 
 public interface OrderingStrategy {

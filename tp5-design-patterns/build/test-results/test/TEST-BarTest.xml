@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BarTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-03-24T12:37:40" hostname="torre" time="0.489">
+<testsuite name="BarTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-03-24T15:49:17" hostname="torre" time="0.419">
   <properties/>
   <testcase name="happyHour()" classname="BarTest" time="0.001"/>
-  <testcase name="impatientStrategy()" classname="BarTest" time="0.002"/>
-  <testcase name="removeObserver()" classname="BarTest" time="0.467"/>
+  <testcase name="impatientStrategy()" classname="BarTest" time="0.001"/>
+  <testcase name="removeObserver()" classname="BarTest" time="0.392"/>
   <testcase name="smartStrategyStartClosed()" classname="BarTest" time="0.001"/>
-  <testcase name="smartStrategyStartOpened()" classname="BarTest" time="0.005"/>
-  <testcase name="addObserver()" classname="BarTest" time="0.006"/>
+  <testcase name="smartStrategyStartOpened()" classname="BarTest" time="0.001"/>
+  <testcase name="addObserver()" classname="BarTest" time="0.007"/>
   <testcase name="orderStringRecipe()" classname="BarTest" time="0.001"/>
+  <testcase name="ferengiStartClosed()" classname="BarTest" time="0.001"/>
+  <testcase name="ferengiAlreadyOpened()" classname="BarTest" time="0.0"/>
+  <testcase name="romulan()" classname="BarTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

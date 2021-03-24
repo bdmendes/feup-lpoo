@@ -1,4 +1,4 @@
-package bar;
+package bar.client;
 
 import string.StringDrink;
 import string.StringRecipe;

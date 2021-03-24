@@ -1,4 +1,6 @@
-package bar;
+package bar.client;
+import bar.bar.Bar;
+import bar.bar.StringBar;
 import string.StringDrink;
 import string.StringRecipe;
 
