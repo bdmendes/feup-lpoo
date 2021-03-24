@@ -1,7 +1,5 @@
-package String;
+package string;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class StringTransformerGroup implements StringTransformer {

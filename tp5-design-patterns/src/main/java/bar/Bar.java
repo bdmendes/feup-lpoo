@@ -1,10 +1,10 @@
-package Bar;
+package bar;
 
 import java.util.ArrayList;
 
 public abstract class Bar {
     private boolean happyHour;
-    private ArrayList<BarObserver> observers;
+    private final ArrayList<BarObserver> observers;
 
     public Bar(){
         this.happyHour = false;

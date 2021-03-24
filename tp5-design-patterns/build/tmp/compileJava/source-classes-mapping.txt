@@ -1,24 +1,32 @@
-String/StringInverter.java
- String.StringInverter
-String/StringReplacer.java
- String.StringReplacer
-String/StringCaseChanger.java
- String.StringCaseChanger
-String/StringTransformer.java
- String.StringTransformer
-String/StringDrink.java
- String.StringDrink
-String/StringRecipe.java
- String.StringRecipe
-String/StringTransformerGroup.java
- String.StringTransformerGroup
-Bar/Client.java
- Bar.Client
-Bar/BarObserver.java
- Bar.BarObserver
-Bar/StringBar.java
- Bar.StringBar
-Bar/HumanClient.java
- Bar.HumanClient
-Bar/Bar.java
- Bar.Bar
+bar/ImpatientStrategy.java
+ bar.ImpatientStrategy
+bar/Bar.java
+ bar.Bar
+bar/OrderingStrategy.java
+ bar.OrderingStrategy
+string/StringReplacer.java
+ string.StringReplacer
+string/StringTransformerGroup.java
+ string.StringTransformerGroup
+bar/Order.java
+ bar.Order
+bar/StringBar.java
+ bar.StringBar
+bar/Client.java
+ bar.Client
+bar/BarObserver.java
+ bar.BarObserver
+string/StringInverter.java
+ string.StringInverter
+string/StringDrink.java
+ string.StringDrink
+string/StringRecipe.java
+ string.StringRecipe
+string/StringCaseChanger.java
+ string.StringCaseChanger
+string/StringTransformer.java
+ string.StringTransformer
+bar/SmartStrategy.java
+ bar.SmartStrategy
+bar/HumanClient.java
+ bar.HumanClient

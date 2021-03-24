@@ -4,7 +4,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import String.*;
+import string.*;
 
 public class StringTest {
     @Test

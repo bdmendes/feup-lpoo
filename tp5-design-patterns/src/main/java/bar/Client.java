@@ -1,7 +1,7 @@
-package Bar;
+package bar;
 
-import String.StringDrink;
-import String.StringRecipe;
+import string.StringDrink;
+import string.StringRecipe;
 
 public interface Client extends BarObserver{
     void wants(StringDrink drink, StringRecipe recipe, StringBar bar);

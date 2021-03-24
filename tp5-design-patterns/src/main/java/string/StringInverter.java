@@ -1,4 +1,4 @@
-package String;
+package string;
 
 public class StringInverter implements StringTransformer{
     @Override
