@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BarTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-24T11:34:09" hostname="torre" time="0.416">
+  <properties/>
+  <testcase name="happyHour()" classname="BarTest" time="0.021"/>
+  <testcase name="removeObserver()" classname="BarTest" time="0.384"/>
+  <testcase name="addObserver()" classname="BarTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

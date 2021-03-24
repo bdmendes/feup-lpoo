@@ -1,2 +1,4 @@
 StringTest.java
  StringTest
+BarTest.java
+ BarTest

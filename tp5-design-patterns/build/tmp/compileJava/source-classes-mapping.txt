@@ -12,3 +12,13 @@ String/StringRecipe.java
  String.StringRecipe
 String/StringTransformerGroup.java
  String.StringTransformerGroup
+Bar/Client.java
+ Bar.Client
+Bar/BarObserver.java
+ Bar.BarObserver
+Bar/StringBar.java
+ Bar.StringBar
+Bar/HumanClient.java
+ Bar.HumanClient
+Bar/Bar.java
+ Bar.Bar
