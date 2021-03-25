@@ -1,152 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b435420-c662-432d-9308-eb90bd7ac2cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../tp1-git-fun/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp1-git-fun/second.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp1-git-fun/src/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp1-git-fun/third.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/build/distributions/hero-1.0-SNAPSHOT.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/build/scripts/hero" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/build/scripts/hero.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/Arena.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/element/Coin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/element/Element.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/element/Hero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/element/Monster.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/element/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp2-hero/src/main/java/element/Wall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.aggregator/ListAggregator.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.aggregator/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.deduplicator/ListDeduplicator.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.deduplicator/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.filterer/DivisibleByFilter.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.filterer/ListFilterer.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.filterer/PositiveFilter.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.filterer/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.sorter/ListSorter.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/com.aor.numbers.sorter/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/pitest/202103101231/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/classes/com.aor.numbers.ListAggregatorTest$ListAggregatorTestCornerCase1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/classes/com.aor.numbers.ListAggregatorTest$ListAggregatorTestCornerCase2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/classes/com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/classes/com.aor.numbers.ListDeduplicatorTest$DeduplicatorEdgeCase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/classes/com.aor.numbers.ListDeduplicatorTest$DeduplicatorOriginal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/classes/com.aor.numbers.ListFiltererTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/classes/com.aor.numbers.ListSorterTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/reports/tests/test/packages/com.aor.numbers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/TEST-com.aor.numbers.ListAggregatorTest$ListAggregatorTestCornerCase1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/TEST-com.aor.numbers.ListAggregatorTest$ListAggregatorTestCornerCase2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/TEST-com.aor.numbers.ListAggregatorTest$ListAggregatorTestPublic.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/TEST-com.aor.numbers.ListDeduplicatorTest$DeduplicatorEdgeCase.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/TEST-com.aor.numbers.ListDeduplicatorTest$DeduplicatorOriginal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/TEST-com.aor.numbers.ListFiltererTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/TEST-com.aor.numbers.ListSorterTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/aggregator/ListAggregator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/deduplicator/IListDeduplicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/deduplicator/ListDeduplicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/filterer/DivisibleByFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/filterer/IListFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/filterer/ListFilterer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/filterer/PositiveFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/sorter/IListSorter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/main/java/com/aor/numbers/sorter/ListSorter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/test/java/com/aor/numbers/ListAggregatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/test/java/com/aor/numbers/ListDeduplicatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/test/java/com/aor/numbers/ListFiltererTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp3-unit-tests/src/test/java/com/aor/numbers/ListSorterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/build/distributions/tp4-solid-1.0-SNAPSHOT.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/build/scripts/tp4-solid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/build/scripts/tp4-solid.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/area/AreaAggregator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/area/AreaStringOutputter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/area/AreaXMLOutputter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/area/Drawable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/area/HasArea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/area/SumProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/city/City.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/city/House.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/AreaShape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/elementar/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/elementar/Ellipse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/elementar/Line.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/elementar/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/elementar/Square.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4-solid/src/main/java/shapes/elementar/Triangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/reports/tests/test/classes/BarTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/reports/tests/test/classes/StringTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/test-results/test/TEST-BarTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/test-results/test/TEST-StringTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/bar/Bar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/bar/BarObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/bar/StringBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/AlienClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/FerengiClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/HumanClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/ImpatientStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/OrderingStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/RomulanClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/bar/client/SmartStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/string/StringCaseChanger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/string/StringDrink.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/string/StringInverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/string/StringRecipe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/string/StringReplacer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/string/StringTransformer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/main/java/string/StringTransformerGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/test/java/BarTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp5-design-patterns/src/test/java/StringTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="9b435420-c662-432d-9308-eb90bd7ac2cd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,6 +95,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553520726322" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -367,7 +223,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553507421844</updated>
-      <workItem from="1616603243604" duration="5348000" />
+      <workItem from="1616603243604" duration="5514000" />
     </task>
     <servers />
   </component>
