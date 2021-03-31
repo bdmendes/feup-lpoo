@@ -23,8 +23,8 @@ public class OrderTest {
 
     @Test
     public void isElegibleForFreeDelivery() {
-        assertFalse(getSmallOrder().isElegibleForFreeDelivery());
-        assertTrue(getLargeOrder().isElegibleForFreeDelivery());
+        assertFalse(getSmallOrder().isEligibleForFreeDelivery());
+        assertTrue(getLargeOrder().isEligibleForFreeDelivery());
     }
 
     @Test
