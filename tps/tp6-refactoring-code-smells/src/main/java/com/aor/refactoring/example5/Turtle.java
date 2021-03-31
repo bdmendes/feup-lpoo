@@ -3,12 +3,22 @@ package com.aor.refactoring.example5;
 public class Turtle {
     private int row;
     private int column;
-    private char direction;
+    private Direction direction;
 
     public Turtle(int row, int column, char direction) {
         this.row = row;
         this.column = column;
-        this.direction = direction;
+        setDirection(direction);
+    }
+
+    private void setDirection(char dir){
+        switch(dir){
+            case 'E': this.direction = new EastDirection(); break;
+            case 'N': this.direction = new NorthDirection(); break;
+            case 'W': this.direction = new WestDirection(); break;
+            case 'S': this.direction = new SouthDirection(); break;
+            default: break;
+        }
     }
 
     public int getRow() {
@@ -20,25 +30,36 @@ public class Turtle {
     }
 
     public char getDirection() {
-        return direction;
+        return direction.getChar();
+    }
+
+    public void setDirection(Direction direction) {
+        this.direction = direction;
+    }
+
+    public void incrementRow() {
+        this.row++;
+    }
+
+    public void decrementRow() {
+        this.row--;
+    }
+
+    public void incrementColumn() {
+        this.column++;
+    }
+
+    public void decrementColumn() {
+        this.column--;
     }
 
     public void execute(char command) {
-        if (command == 'L') { // ROTATE LEFT
-            if (direction == 'N') direction = 'W';
-            else if (direction == 'W') direction = 'S';
-            else if (direction == 'S') direction = 'E';
-            else if (direction == 'E') direction = 'N';
-        } else if (command == 'R') { // ROTATE RIGHT
-            if (direction == 'N') direction = 'E';
-            else if (direction == 'E') direction = 'S';
-            else if (direction == 'S') direction = 'W';
-            else if (direction == 'W') direction = 'N';
-        } else if (command == 'F'){ // MOVE FORWARD
-            if (direction == 'N') row--;
-            if (direction == 'S') row++;
-            if (direction == 'W') column--;
-            if (direction == 'E') column++;
+        if (command == 'L') {
+            this.direction.rotateLeft(this);
+        } else if (command == 'R') {
+            this.direction.rotateRight(this);
+        } else if (command == 'F') {
+            this.direction.moveForward(this);
         }
     }
 }
