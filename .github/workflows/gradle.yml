@@ -22,4 +22,4 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Build with Gradle
-      run: cd tps/tp2-hero && ./gradlew build
+      run: cd tps/tp2-hero && ./gradlew wrapper && ./gradlew build
